@@ -32,6 +32,13 @@
                      return { width: percentString() };
                  };
 
+
+                 // ASSIGNMENT DIRECTIVES1
+                 scope.thumbStyle = function() {
+                     return { left: percentString() };
+                 };
+                 // ASSIGNEMNT END
+
                  scope.onClickSeekBar = function(event) {
                      var percent = calculatePercent(seekBar, event);
                      scope.value = percent * scope.max;
